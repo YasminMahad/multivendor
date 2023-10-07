@@ -1,8 +1,15 @@
 import React from 'react'
+import Ribbon from './Ribbon'
+import Card from './Card'
 
 const CardList = () => {
   return (
-    <div>CardList</div>
+    <div>
+      <Ribbon/>
+      <div>
+      <Card/>
+      </div>
+    </div>
   )
 }
 

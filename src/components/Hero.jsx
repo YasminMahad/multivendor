@@ -4,8 +4,8 @@ const Hero = () => {
   return (
     <div className="w-screen flex justify-end items-center">
         
-            <div className="w-[38%] justify-center items-center">
-                <p className="text-6xl font-extrabold ">
+            <div className="w-[34%] justify-end items-center text-left">
+                <p className="text-6xl font-extrabold">
                     Always <br/>Be Your <br/>
                     <span className="text-6xl text-orange-600 font-extrabold mt-4 mb-4">
                         MULTIVENDOR<br/>
@@ -23,7 +23,7 @@ const Hero = () => {
             </div>
             
           
-            <img src="./src/assets/img3.jpg" className="object-cover w-[600px] h-[600px]"/>
+            <img src="./src/assets/img4.png" className=" w-[550px] h-[550px] "/>
        
     </div>
   )
