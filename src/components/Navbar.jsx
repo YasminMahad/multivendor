@@ -9,31 +9,31 @@ const Navbar = () => {
          <div className="flex">
             <div className="flex-col m-2 p-2 w-60"> 
             <Link to="/">
-                <p className="text-2xl font-bold m-2 p-2">MultiVendor.</p>
+                <p className="text-2xl font-bold m-2 p-2">Quickies.</p>
                 </Link>
 
             </div>
-            <div className="flex rounded-full w-[50%] h-20 items-center justify-start">
+            <div className="flex rounded-full mt-0 mb-0 pt-0 pb-0 items-center justify-start">
             
-                <input type="text" placeholder='search for products' className="rounded-l-full flex text-sm w-80 mr-0 pr-0"/>
-                <div className="flex ml-0 pl-0 border-l-2">
-                    <p className="flex ml-3 mr-5">All Categories</p>
-                    <p className="justify-end flex"><FaChevronDown/></p>
+                <input type="text" placeholder='search for products' className="rounded-l-full flex text-sm w-80 h-10 mr-0 pr-0 border-2 border-[#d4d1d4]"/>
+                <div className="flex ml-0 pl-0  h-10">
+                    <p className="flex px-5 h-10 text-sm font-thin border-t-2 border-b-2 border-[#d8d4d8] items-center">All Categories</p>
+                    <p className="justify-end flex text-xs font-thin border-t-2 border-b-2 border-[#d3cfd3] items-center px-2"><FaChevronDown/></p>
                 </div>
-                <p className=" flex m-2 p-2 bg-orange-600 rounded-r-full">
-                    <FaSearch className="text-[#ffffff] text-lg text-bold" />
+                <p className=" flex  p-2.5 bg-orange-600 rounded-r-full ">
+                    <FaSearch className="text-[#ffffff] text-xl text-bold" />
                 </p>
             
             </div>
-            <div className="justify-center items-center p-2">
+            <div className="flex justify-center items-center p-2">
                 <p className=" flex justify-center items-center"><FaRegStar/></p>
                 <p className="text-sm">WhishList</p>
             </div>
-            <div className="justify-center items-center p-2">
+            <div className="flex justify-center items-center p-2">
                 <p className=" flex justify-center items-center"><BiGitCompare/></p>
                 <p>Compare</p>
             </div>
-            <div className="justify-center items-center p-2">
+            <div className="flex justify-center items-center p-2">
                 <p className=" flex justify-center items-center"><AiOutlineShopping/></p>
                 <p>Cart</p>
             </div>

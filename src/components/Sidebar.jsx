@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaChevronDown } from 'react-icons/fa';
 import {HiMenu} from 'react-icons/hi';
+import {TbBrandOpenai} from 'react-icons/tb';
 
 const Sidebar = () => {
   return (
@@ -12,29 +13,30 @@ const Sidebar = () => {
             </p>
             <FaChevronDown className="pl-2 ml-2 text-lg my-auto px-auto"/>
         </div>
-        <div>
+        <div className="p-2 m-2 items-center text-center text-white text-sm font-bold">
           <p>HOME</p>
         </div>
-        <div>
+        <div className="p-2 m-2 items-center text-center text-white text-sm font-bold">
           <p>SHOP</p>
         </div>
-        <div>
+        <div className="p-2 m-2 items-center text-center text-white text-sm font-bold">
           <p>PROMOTIONS</p>
         </div>
-        <div>
+        <div className="p-2 m-2 items-center text-center text-white text-sm font-bold">
           <p>BLOGS</p>
         </div>
-        <div>
+        <div className="p-2 m-2 items-center text-center text-white text-sm font-bold">
           <p>SPECIAL</p>
         </div>
-        <div>
+        <div className="p-2 m-2 items-center text-center text-white text-sm font-bold">
           <p>PAGES</p>
         </div>
-        <div>
+        <div className="p-2 m-2 items-center text-center text-white text-sm font-bold">
           <p>VENDOR STORE LIST</p>
         </div>
-        <div>
-          SUPER DISCOUNT
+        <div className="p-2 m-2 ml-8 items-center text-center text-white text-sm font-bold flex justify-end">
+          <p className="flex">SUPER DISCOUNT</p>
+          <TbBrandOpenai className="flex text-orange-600 text-2xl ml-2"/>
         </div>
     </div>
   )
