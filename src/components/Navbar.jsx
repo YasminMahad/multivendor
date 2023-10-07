@@ -5,11 +5,11 @@ import {BiGitCompare} from 'react-icons/bi';
 import {AiOutlineShopping,AiOutlineUser} from 'react-icons/ai';
 const Navbar = () => {
   return (
-    <nav className="w-screen fixed t-0 r-0 z-30 bg-[#e9f2f5] lg:justify-center  justify-between ">
+    <nav className="w-screen  t-0 r-0 z-30 bg-[#e9f2f5] lg:justify-center  justify-between ">
          <div className="flex">
             <div className="flex-col m-2 p-2 w-60"> 
             <Link to="/">
-                <p className="text-2xl text-bold m-2 p-2">MultiVendor.</p>
+                <p className="text-2xl font-bold m-2 p-2">MultiVendor.</p>
                 </Link>
 
             </div>
