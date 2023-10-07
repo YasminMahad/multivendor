@@ -20,21 +20,21 @@ const Navbar = () => {
                     <p className="flex px-5 h-10 text-sm font-thin border-t-2 border-b-2 border-[#d8d4d8] items-center">All Categories</p>
                     <p className="justify-end flex text-xs font-thin border-t-2 border-b-2 border-[#d3cfd3] items-center px-2"><FaChevronDown/></p>
                 </div>
-                <p className=" flex  p-2.5 bg-orange-600 rounded-r-full ">
+                <p className=" flex  p-2.5 bg-orange-600 rounded-r-full pr-3 pl-3">
                     <FaSearch className="text-[#ffffff] text-xl text-bold" />
                 </p>
             
             </div>
-            <div className="flex justify-center items-center p-2">
-                <p className=" flex justify-center items-center"><FaRegStar/></p>
+            <div className="justify-center items-center p-2">
+                <p className=" flex justify-center items-center mt-3"><FaRegStar/></p>
                 <p className="text-sm">WhishList</p>
             </div>
-            <div className="flex justify-center items-center p-2">
-                <p className=" flex justify-center items-center"><BiGitCompare/></p>
+            <div className="justify-center items-center p-2">
+                <p className=" flex justify-center items-center mt-3"><BiGitCompare/></p>
                 <p>Compare</p>
             </div>
-            <div className="flex justify-center items-center p-2">
-                <p className=" flex justify-center items-center"><AiOutlineShopping/></p>
+            <div className="justify-center items-center p-2">
+                <p className=" flex justify-center items-center mt-3"><AiOutlineShopping/></p>
                 <p>Cart</p>
             </div>
             <div className="flex justify-start items-center">

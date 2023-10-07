@@ -17,7 +17,7 @@ const Hero = () => {
                     Total Order </span>:<span className="text-3xl font-bold"> $30.00</span>
                 </p>
               
-                <button className="mx-6 px-6 p-2 m-2 mt-10 rounded-full bg-blue-600">
+                <button className="mx-6 px-6 p-2 m-2 mt-10 rounded-full bg-blue-600 text-white font-bold">
                     Shop Now
                 </button>
             </div>
