@@ -1,8 +1,22 @@
 import React from 'react';
 
-const Card = () => {
+
+
+const Card = ({data}) => {
   return (
-    <div>Card</div>
+    <div>
+      <img src={data.img} className=""/>
+      <div>
+        <p>
+          {data.name}
+          <span>
+            {data.price}
+          </span>
+        </p>
+        {data.orders}
+
+      </div>
+    </div>
   )
 }
 

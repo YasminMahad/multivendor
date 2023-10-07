@@ -1,4 +1,4 @@
-export const data=[
+export const phone=[
     {
         img:"./assets/img10.png",
         price:"",

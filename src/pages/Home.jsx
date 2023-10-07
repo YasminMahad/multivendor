@@ -1,9 +1,10 @@
 import React from 'react'
-import Navbar from '../components/Navbar'
-import Sidebar from '../components/Sidebar'
-import Hero from '../components/Hero'
-import Ribbon from '../components/Ribbon'
-import CardList from '../components/CardList'
+import Navbar from '../components/Navbar';
+import Sidebar from '../components/Sidebar';
+import Hero from '../components/Hero';
+import CardList from '../components/CardList';
+import {superDeals} from '../data/superDeals';
+import { topSelection } from '../data/topSelection';
 
 const Home = () => {
   return (
@@ -11,7 +12,8 @@ const Home = () => {
         <Navbar/>
         <Sidebar/>
         <Hero/>
-        <CardList/>
+        <CardList data={superDeals}/>
+        <CardList data={topSelection}/>
     </div>
   )
 }
