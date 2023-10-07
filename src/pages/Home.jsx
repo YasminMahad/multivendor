@@ -5,6 +5,8 @@ import Hero from '../components/Hero';
 import CardList from '../components/CardList';
 import {superDeals} from '../data/superDeals';
 import { topSelection } from '../data/topSelection';
+import CardList2 from '../components/CardList2';
+import CardList3 from '../components/CardList3';
 
 const Home = () => {
   return (
@@ -13,7 +15,8 @@ const Home = () => {
         <Sidebar/>
         <Hero/>
         <CardList data={superDeals}/>
-        <CardList data={topSelection}/>
+        <CardList2 data={topSelection}/>
+        <CardList3 data={superDeals}/>
     </div>
   )
 }

@@ -5,9 +5,9 @@ import Card from './Card';
 const CardList = ({data}) => {
   console.log(data);
   return (
-    <div>
+    <div className="w-screen mt-4 bg-slate-200">
       <Ribbon/>
-      <div>
+      <div className="w-full flex mt-6">
         {data?
           data.map((item,index)=>(
             <Card data={item} key={index}/>
