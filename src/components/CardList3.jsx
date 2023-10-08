@@ -9,7 +9,7 @@ const CardList3 = ({data}) => {
     <div className="w-screen mt-20 justify-between flex">
         
             <p className="font-bold text-3xl flex w-[30%] items-center p-2 m-2">
-                New <span className="text-orange-600">Arrivals</span>
+                New <span className="text-orange-600 ml-2">Arrivals</span>
             </p>
             
             
