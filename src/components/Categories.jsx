@@ -1,8 +1,9 @@
 import React from "react";
+import {FaUserAlt} from 'react-icons/fa';
 
 const Categories = () => {
   return (
-    <div className="w-screen">
+    <div className="w-screen bg-slate-200">
       <div className="w-[99%] p-2 m-2 mt-20 flex">
         <div className="w-full flex items-center justify-center mt-20 mb-5 text-center">
           <p className="flex justify-center items-center text-4xl font-extrabold text-center">
@@ -41,32 +42,32 @@ const Categories = () => {
         <div className="w-[50%] flex-row">
           <div className="w-[100%] flex">
             <div className="w-[50%]">
-              <div className="w-full">
-                <div className="w-full font-bold text-sm">
+              <div className="w-full p-2 py-4">
+                <div className="w-full font-bold text-sm pl-3 pt-2 pb-2">
                   <p>Top Ranking</p>
                 </div>
-                <div className="w-full flex">
-                  <div className="flex w-[200px] h-[110px] rounded-xl m-1">
-                    <img src="./src/assets/img9.jpg" className="w-full h-full" />
+                <div className="w-full flex bg-slate-200">
+                  <div className="flex w-[200px] h-[110px] rounded-lg m-1">
+                    <img src="./src/assets/img9.jpg" className="w-full h-full rounded-lg" />
                   </div>
-                  <div className="flex w-[200px] h-[110px] rounded-xl m-1">
-                    <img src="./src/assets/img8.jpg" className="w-full h-full" />
+                  <div className="flex w-[200px] h-[110px] rounded-lg m-1">
+                    <img src="./src/assets/img8.jpg" className="w-full h-full rounded-lg " />
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="w-[50%]">
-              <div className="w-full">
-                <div className="w-full font-bold text-sm">
+              <div className="w-full p-2 py-4">
+                <div className="w-full font-bold text-sm pl-3 pt-2 pb-2">
                   <p>Smart Phones</p>
                 </div>
                 <div className="w-full flex">
                   <div className="flex w-[200px] h-[110px] rounded-xl m-1">
-                    <img src="./src/assets/img9.jpg" className="w-full h-full"/>
+                    <img src="./src/assets/img9.jpg" className="w-full h-full rounded-lg"/>
                   </div>
                   <div className="flex w-[200px] h-[110px] rounded-xl m-1">
-                    <img src="./src/assets/img8.jpg" className="w-full h-full"/>
+                    <img src="./src/assets/img8.jpg" className="w-full h-full rounded-lg"/>
                   </div>
                 </div>
               </div>
@@ -78,37 +79,60 @@ const Categories = () => {
 
           <div className="w-[100%] flex">
             <div className="w-[50%]">
-              <div className="w-full">
-                <div className="w-full font-bold text-sm">
+              <div className="w-full p-2 py-4">
+                <div className="w-full font-bold text-sm pl-3 pt-2 pb-2">
                   <p>Home Appliances</p>
                 </div>
-                <div className="flex">
+                <div className="flex rounded-xl">
                   <div className="flex w-[200px] h-[110px] rounded-xl m-1">
-                    <img src="./src/assets/img9.jpg" className="w-full h-full"/>
+                    <img src="./src/assets/img9.jpg" className="w-full h-full rounded-lg"/>
                   </div>
                   <div className="flex w-[200px] h-[110px] rounded-xl m-1">
-                    <img src="./src/assets/img8.jpg" className="w-full h-full"/>
+                    <img src="./src/assets/img8.jpg" className="w-full h-full rounded-lg"/>
                   </div>
                 </div>
               </div>
             </div>
 
             <div className="w-[50%]">
-              <div className="w-full">
-                <div className="w-full font-bold text-sm">
+              <div className="w-full p-2 py-4">
+                <div className="w-full font-bold text-sm pl-3 pt-2 pb-2">
                   <p>Sports</p>
                 </div>
                 <div className="flex">
                   <div className="flex w-[200px] h-[110px] rounded-xl m-1">
-                    <img src="./src/assets/img9.jpg" />
+                    <img src="./src/assets/img9.jpg" className="w-full h-full rounded-lg"/>
                   </div>
                   <div className="flex w-[200px] h-[110px] rounded-xl m-1">
-                    <img src="./src/assets/img8.jpg" />
+                    <img src="./src/assets/img8.jpg" className="w-full h-full rounded-lg"/>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+        </div>
+        <div className="bg-slate-100 rounded-lg justify-center items-center px-3 py-2 ml-5">
+            <div className="items-center justify-center flex pt-1"> 
+            <div className="w-[50px] flex justify-center items-center rounded-full p-3">
+                <FaUserAlt className="text-2xl text-slate-500"/>
+            </div>
+            </div>
+            <div className="flex justify-center items-center mt-3">
+                <p className="text-lg font-bold">
+                    Welcome to Quickies
+                </p>
+            </div>
+            <div className="flex justify-between items-center py-3">
+                <button type="button" className="p-2 ml-8 rounded-full border border-orange-400">
+                    Join Us
+                </button>
+                <button type="button" className="p-2 mr-8    rounded-full border border-orange-400">
+                    Sign In
+                </button>
+            </div>
+            <div className="rounded-lg">
+                <img src="./src/assets/img13.jpg" className="rounded-lg w-full h-full" />
+            </div>
         </div>
       </div>
     </div>
