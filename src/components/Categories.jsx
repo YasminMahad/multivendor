@@ -2,13 +2,24 @@ import React from 'react'
 
 const Categories = () => {
   return (
-    <div className="w-screen flex">
-        <div className="w-[80%] flex items-center justify-center">
-            <p>Choose Category</p>
+    <div className="w-screen">
+        <div className="w-full  justify-center items-center p-2 m-2 mt-20">
+        <div className="w-full flex items-center justify-center mt-20 mb-5 text-center">
+            <p className="flex justify-center items-center text-4xl font-extrabold text-center">Choose
+            <span className="text-orange-600 ml-2"> Category</span></p>
         </div>
-        <div className="w-screen flex" >
-            <div>
-                <img src="./src/assets/category1.jpg"/>
+        </div>
+        <div>
+            <div className="w-[280px] flex relative justify-center items-center ml-4">
+             
+                <img src="./src/assets/category1.jpg" className="object-cover flex rounded-lg"/>
+                   <div className="absolute top-1 left-1">
+                    <p>ON THE WEEKEND</p>
+                    <p>TOP CLOTHING</p>
+                    <button type="button">
+                        SHOP NOW
+                    </button>
+                </div>
             </div>
 
         </div>
@@ -18,7 +29,7 @@ const Categories = () => {
                     <p>Top Ranking</p>
                 </div>
                 <div>
-                    <div>
+                    <div >
                         <img src="./src/assets/img9.jpg"/>
                     </div>
                     <div>
