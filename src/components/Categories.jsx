@@ -39,7 +39,7 @@ const Categories = () => {
 
         {/*---------------------------------------------------------------------*/}
         {/*---------------------------------------------------------------------*/}
-        <div className="w-[50%] flex-row">
+        <div className="w-[50%] flex-row bg-slate-50 rounded-lg ml-2">
           <div className="w-[100%] flex">
             <div className="w-[50%]">
               <div className="w-full p-2 py-4">
@@ -62,7 +62,7 @@ const Categories = () => {
                 <div className="w-full font-bold text-sm pl-3 pt-2 pb-2">
                   <p>Smart Phones</p>
                 </div>
-                <div className="w-full flex">
+                <div className="w-full flex bg-slate-200">
                   <div className="flex w-[200px] h-[110px] rounded-xl m-1">
                     <img src="./src/assets/img9.jpg" className="w-full h-full rounded-lg"/>
                   </div>
@@ -83,7 +83,7 @@ const Categories = () => {
                 <div className="w-full font-bold text-sm pl-3 pt-2 pb-2">
                   <p>Home Appliances</p>
                 </div>
-                <div className="flex rounded-xl">
+                <div className="flex rounded-xl bg-slate-200">
                   <div className="flex w-[200px] h-[110px] rounded-xl m-1">
                     <img src="./src/assets/img9.jpg" className="w-full h-full rounded-lg"/>
                   </div>
@@ -99,7 +99,7 @@ const Categories = () => {
                 <div className="w-full font-bold text-sm pl-3 pt-2 pb-2">
                   <p>Sports</p>
                 </div>
-                <div className="flex">
+                <div className="flex bg-slate-200">
                   <div className="flex w-[200px] h-[110px] rounded-xl m-1">
                     <img src="./src/assets/img9.jpg" className="w-full h-full rounded-lg"/>
                   </div>
