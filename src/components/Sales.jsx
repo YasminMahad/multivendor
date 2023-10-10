@@ -6,10 +6,11 @@ import { Link } from 'react-router-dom'
 const Sales = () => {
   return (
     <div>
-        <div>
+    <div className="flex-row justify-center items-center">
+        <div className="flex">
             <Carousel/>
         </div>
-        <div>
+        <div className="flex">
             <Trending/> 
         </div>
         <div>
@@ -113,7 +114,7 @@ const Sales = () => {
         </div>
 
 
-
+</div>
     </div>
   )
 }
