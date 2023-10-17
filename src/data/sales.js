@@ -58,6 +58,30 @@ export const popular = [
       rating: "3"
     },
     {
+        img: "./src/assets/img20.jpg",
+        name: "Watch",
+        price: "35",
+        offerPercentage: "15",
+        order: "20",
+        rating: "3"
+      },
+      {
+        img: "./src/assets/img20.jpg",
+        name: "Watch",
+        price: "35",
+        offerPercentage: "15",
+        order: "20",
+        rating: "3"
+      },
+      {
+        img: "./src/assets/img20.jpg",
+        name: "Watch",
+        price: "35",
+        offerPercentage: "15",
+        order: "20",
+        rating: "3"
+      },
+    {
       img: "./src/assets/img20.jpg",
       name: "Watch",
       price: "35",
@@ -98,5 +122,38 @@ export const popular = [
       offerPercentage: "15",
       order: "20",
       rating: "3"
-    }
+    },
+    {
+        img: "./src/assets/img20.jpg",
+        name: "Watch",
+        price: "35",
+        offerPercentage: "15",
+        order: "20",
+        rating: "3"
+      },
+      {
+        img: "./src/assets/img20.jpg",
+        name: "Watch",
+        price: "35",
+        offerPercentage: "15",
+        order: "20",
+        rating: "3"
+      },
+      {
+        img: "./src/assets/img20.jpg",
+        name: "Watch",
+        price: "35",
+        offerPercentage: "15",
+        order: "20",
+        rating: "3"
+      },
+      {
+        img: "./src/assets/img20.jpg",
+        name: "Watch",
+        price: "35",
+        offerPercentage: "15",
+        order: "20",
+        rating: "3"
+      },
+      
   ];

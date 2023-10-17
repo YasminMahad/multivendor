@@ -45,52 +45,50 @@ const Sales = () => {
               </p>
             </div>
             <div className="w-[40%] flex justify-end">
-              
-                <p
-                  className={
-                    flashState
-                      ? "mx-4 px-4 font-bold text-xs text-orange-600"
-                      : "mx-4 px-4 font-bold text-xs text-slate-600"
-                  }
-                  onClick={() => {
-                    setFlashState(true);
-                    setPopularState(false);
-                    setTopState(false);
-                  }}
-                >
-                  Flash
-                </p>
-             
-                <p
-                  className={
-                    popularState
-                      ? "mx-4 px-4 font-bold text-xs text-orange-600"
-                      : "mx-4 px-4 font-bold text-xs text-slate-600"
-                  }
-                  onClick={() => {
-                    setPopularState(true);
-                    setFlashState(false);
-                    setTopState(false);
-                  }}
-                >
-                  Popular
-                </p>
-             
-                <p
-                  className={
-                    topState
-                      ? "mx-4 px-4 font-bold text-xs text-orange-600"
-                      : "mx-4 px-4 font-bold text-xs text-slate-600"
-                  }
-                  onClick={() => {
-                    setTopState(true);
-                    setFlashState(false);
-                    setPopularState(false);
-                  }}
-                >
-                  Top Rated
-                </p>
-              
+              <p
+                className={
+                  flashState
+                    ? "mx-4 px-4 font-bold text-xs text-orange-600 hover:cursor-pointer shadow-b shadow-sm shadow-orange-600"
+                    : "mx-4 px-4 font-bold text-xs text-slate-600 hover:cursor-pointer"
+                }
+                onClick={() => {
+                  setFlashState(true);
+                  setPopularState(false);
+                  setTopState(false);
+                }}
+              >
+                Flash
+              </p>
+
+              <p
+                className={
+                  popularState
+                    ? "mx-4 px-4 font-bold text-xs text-orange-600 hover:cursor-pointer shadow-b shadow-sm shadow-orange-600"
+                    : "mx-4 px-4 font-bold text-xs text-slate-600 hover:cursor-pointer"
+                }
+                onClick={() => {
+                  setPopularState(true);
+                  setFlashState(false);
+                  setTopState(false);
+                }}
+              >
+                Popular
+              </p>
+
+              <p
+                className={
+                  topState
+                    ? "mx-4 px-4 font-bold text-xs text-orange-600 hover:cursor-pointer shadow-b shadow-sm shadow-orange-600"
+                    : "mx-4 px-4 font-bold text-xs text-slate-600 hover:cursor-pointer"
+                }
+                onClick={() => {
+                  setTopState(true);
+                  setFlashState(false);
+                  setPopularState(false);
+                }}
+              >
+                Top Rated
+              </p>
             </div>
           </div>
           {/*------------
@@ -100,16 +98,15 @@ const Sales = () => {
             {/* ------------------------------------------------------------------------------
                 -------Will Replace the Below with a card to prevent repeatation----------------
                 ----------------------------------------------------------------------------------*/}
-            {
-            popularState ? popular.map((item,index)=>(<Card2 data={item} key={index}/>))
-             : ""
-            }
-            {
-                topState ? topRated.map((item,index)=>(<Card2 data={item} key={index}/>)) : ""
-            }
-            {
-            flashState ? flash.map((item,index)=>(<Card2 data={item} key={index}/>))  : ""
-            }
+            {popularState
+              ? popular.map((item, index) => <Card2 data={item} key={index} />)
+              : ""}
+            {topState
+              ? topRated.map((item, index) => <Card2 data={item} key={index} />)
+              : ""}
+            {flashState
+              ? flash.map((item, index) => <Card2 data={item} key={index} />)
+              : ""}
           </div>
         </div>
       </div>
