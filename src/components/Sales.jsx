@@ -13,7 +13,7 @@ const Sales = () => {
   return (
     <div>
       <div className="flex w-full mt-[150px]">
-        <div className="flex-row w-[20%] justify-between">
+        <div className="flex-row w-[25%] justify-between">
           <div className="flex w-full">
             <Carousel />
           </div>
