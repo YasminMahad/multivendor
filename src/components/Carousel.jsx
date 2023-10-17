@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 //import { BsArrowLeftSquareFill } from 'react-icons/bs';
 import { carousel } from "../data/carousel";
 import { BsArrowLeftSquareFill,BsArrowRightSquareFill } from 'react-icons/bs';
@@ -24,13 +24,13 @@ const Carousel = () => {
               return (
                   
                    <> 
-                  <div className={index === slide ? 'opacity-100 relative':'opacity-0'}>
+                  <div className={index === slide ? 'opacity-100 relative':'opacity-0'} key={index}>
                       {index === slide && (<img className="w-full rounded-md" src={item.imgsrc} alt="This is an Image" />)}
-                    <div>
-                      <p>{item.detail1}</p>
-                      <p>{item.detail2}</p>
-                      <p>{item.detail3}</p>
-                      <button type="button">
+                    <div className="absolute top-0 left-5 justify-center items-center">
+                      <p className="text-sm text-orange-600">{item.detail1}</p>
+                      <p className="text-md font-bold">{item.name}</p>
+                      <p className="text-sm text-slate-700">{item.detail3}</p>
+                      <button type="button" className="px-3 py-1 bg-blue-700 text-sm font-bold rounded-full">
                         SHOP NOW
                       </button>
                     </div>
@@ -44,10 +44,10 @@ const Carousel = () => {
         }
           <BsArrowLeftSquareFill
               onClick={prevSlide}
-              className="absolute top-[50%] text-3xl z-100 text-[#16d9f3b4] cursor-pointer left-8" />
+              className="absolute top-[50%] text-md z-100 text-[#16d9f3b4] cursor-pointer left-8" />
           <BsArrowRightSquareFill
               onClick={nextSlide}
-              className="absolute top-[50%] text-3xl z-100 text-[#12cff0b9] cursor-pointer right-8" />
+              className="absolute top-[50%] text-md z-100 text-[#12cff0b9] cursor-pointer right-8" />
     </div>
   )
 }

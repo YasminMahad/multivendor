@@ -3,7 +3,7 @@ import {FaUserAlt} from 'react-icons/fa';
 
 const Categories = () => {
   return (
-    <div className="w-screen bg-slate-200">
+    <div className="w-screen bg-slate-200 pb-[50px]">
       <div className="w-[99%] p-2 m-2 mt-20 flex">
         <div className="w-full flex items-center justify-center mt-20 mb-5 text-center">
           <p className="flex justify-center items-center text-4xl font-extrabold text-center">
