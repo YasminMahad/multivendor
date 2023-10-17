@@ -9,6 +9,7 @@ import CardList2 from '../components/CardList2';
 import CardList3 from '../components/CardList3';
 import Categories from '../components/Categories';
 import Sales from '../components/Sales';
+import BestSeller from '../components/BestSeller';
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
         <CardList3 data={superDeals}/>
         <Categories/>
         <Sales/>
+        <BestSeller/>
        
     </div>
   )
