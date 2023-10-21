@@ -5,11 +5,7 @@ import { trending } from '../data/trending';
 const Trending = () => {
   return (
     <div className="w-full justify-center items-center">
-        {
-        /*------------------------------------------------------------------------------------
-
-        ----------------WILL CREATE A CARD COMPONENT TO LOOP THROUGH THE ITEMS------------------*/
-        }
+      
         <p className="text-bold m-2 p-2 text-lg text-orange-600">
             Trending 
             <span className="text-black ml-2">Products</span></p>
