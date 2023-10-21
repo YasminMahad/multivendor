@@ -5,7 +5,9 @@ import {HiOutlineLightBulb} from 'react-icons/hi';
 import {GiConverseShoe,GiForkKnifeSpoon,GiQueenCrown} from 'react-icons/gi';
 import {MdOutlineSportsTennis} from 'react-icons/md';
 import {AiOutlineControl} from 'react-icons/ai';
-const listName=["ALL CATEGORIES","SMART WATCH","CONSUMER ELECTRONICS","HOME APPLIANCE","SHOES & "]
+import {bestVendor} from '../data/bestVendor';
+import Card4 from './Card4';
+
 const BestSeller = () => {
   const [stateOne,setStateOne]=useState(true);
   const [stateTwo,setStateTwo]=useState(false);
@@ -24,100 +26,68 @@ const BestSeller = () => {
       <div className="px-10"> 
         <div className="grid grid-cols-5 w-full px-10 justify-between items-center rounded-md mb-2">
           <div 
-          className={stateOne ? "justify-center items-center py-6 px-8 rounded-md bg-orange-600 text-white":"justify-center items-center py-6 px-8 rounded-md"} 
+          className={stateOne ? "justify-center items-center py-4 px-5 rounded-md bg-orange-600 text-white hover:cursor-pointer":"justify-center items-center py-6 px-8 rounded-md hover:cursor-pointer"} 
           onClick={
             ()=>{setStateOne(true),setStateTwo(false),setStateThree(false),setStateFour(false),setStateFive(false),setStateSix(false)}}>
             <p className="justify-center items-center rounded-full text-center flex w-full">
-              <FaTruckFast className={stateOne ? "text-5xl rounded-full p-2  text-white font-light ":"text-5xl rounded-full p-2  text-slate-500 font-light "}/></p>
-            <p className="font-bold text-sm flex justify-center text-center items-center">ALL CATEGORIES</p>
+              <FaTruckFast className={stateOne ? "text-5xl rounded-full p-2  text-orange-600 bg-white font-light ":"text-5xl rounded-full p-2  text-slate-500 font-light "}/></p>
+            <p className="text-xs hover:cursor-pointer flex justify-center text-center items-center">ALL CATEGORIES</p>
           </div>
           <div 
-          className={stateTwo ? "justify-center items-center py-6 px-8 rounded-md bg-orange-600 text-white":"justify-center items-center py-6 px-8 rounded-md"} 
+          className={stateTwo ? "justify-center items-center py-4 px-5 rounded-md bg-orange-600 text-white hover:cursor-pointer":"justify-center items-center py-6 px-8 rounded-md hover:cursor-pointer"} 
           onClick={
             ()=>{setStateOne(false),setStateTwo(true),setStateThree(false),setStateFour(false),setStateFive(false),setStateSix(false)}}>
           <p className="justify-center items-center rounded-full text-center flex w-full">
-            <BsSmartwatch className={stateTwo ? "text-5xl rounded-full p-2  text-white font-light ":"text-5xl rounded-full p-2  text-slate-500 font-light "}/></p>
-            <p className="font-bold text-sm flex justify-center text-center items-center">SMART WATCH</p>
+            <BsSmartwatch className={stateTwo ? "text-5xl rounded-full p-2  text-orange-600 bg-white font-light ":"text-5xl rounded-full p-2  text-slate-500 font-light "}/></p>
+            <p className="text-xs hover:cursor-pointer flex justify-center text-center items-center">SMART WATCH</p>
           </div>
           <div 
-          className={stateThree ? "justify-center items-center py-6 px-8 rounded-md bg-orange-600 text-white":"justify-center items-center py-6 px-8 rounded-md"} 
+          className={stateThree ? "justify-center items-center py-4 px-5 rounded-md bg-orange-600 text-white hover:cursor-pointer":"justify-center items-center py-6 px-8 rounded-md hover:cursor-pointer"} 
           onClick={
             ()=>{setStateOne(false),setStateTwo(false),setStateThree(true),setStateFour(false),setStateFive(false),setStateSix(false)}}>
           <p className="justify-center items-center rounded-full text-center flex w-full">
-            <HiOutlineLightBulb className={stateThree ? "text-5xl rounded-full p-2  text-white font-light ":"text-5xl rounded-full p-2  text-slate-500 font-light "}/></p>
-            <p className="font-bold text-sm flex justify-center text-center items-center">CONSUMER ELECTRONICS</p>
+            <HiOutlineLightBulb className={stateThree ? "text-5xl rounded-full p-2  text-orange-600 bg-white font-light ":"text-5xl rounded-full p-2  text-slate-500 font-light "}/></p>
+            <p className="text-xs hover:cursor-pointer flex justify-center text-center items-center">CONSUMER ELECTRONICS</p>
           </div>
           <div 
-          className={stateFour ? "justify-center items-center py-6 px-8 rounded-md bg-orange-600 text-white":"justify-center items-center py-6 px-8 rounded-md"} 
+          className={stateFour ? "justify-center items-center py-4 px-5 rounded-md bg-orange-600 text-white hover:cursor-pointer":"justify-center items-center py-6 px-8 rounded-md hover:cursor-pointer"} 
           onClick={
             ()=>{setStateOne(false),setStateTwo(false),setStateThree(false),setStateFour(true),setStateFive(false),setStateSix(false)}}>
           <p className="justify-center items-center rounded-full text-center flex w-full">
-            <GiForkKnifeSpoon className={stateFour ? "text-5xl rounded-full p-2  text-white font-light ":"text-5xl rounded-full p-2  text-slate-500 font-light "}/></p>
-            <p className="font-bold text-sm flex justify-center text-center items-center">HOME APPLIANCE</p>
+            <GiForkKnifeSpoon className={stateFour ? "text-5xl rounded-full p-2  text-orange-600 bg-white font-light ":"text-5xl rounded-full p-2  text-slate-500 font-light "}/></p>
+            <p className="text-xs hover:cursor-pointer flex justify-center text-center items-center">HOME APPLIANCE</p>
           </div>
           <div 
-          className={stateFive ? "justify-center items-center py-6 px-8 rounded-md bg-orange-600 text-white":"justify-center items-center py-6 px-8 rounded-md"} 
+          className={stateFive ? "justify-center items-center py-4 px-5 rounded-md bg-orange-600 text-white hover:cursor-pointer":"justify-center items-center py-6 px-8 rounded-md hover:cursor-pointer"} 
           onClick={
             ()=>{setStateOne(false),setStateTwo(false),setStateThree(false),setStateFour(false),setStateFive(true),setStateSix(false)}}>
           <p className="justify-center items-center rounded-full text-center flex w-full">
-            <GiConverseShoe className={stateFive ? "text-5xl rounded-full p-2  text-white font-light ":"text-5xl rounded-full p-2  text-slate-500 font-light "}/></p>
-           <p className="font-bold text-sm flex justify-center text-center items-center"> SHOES & ACCESSORIES</p>
+            <GiConverseShoe className={stateFive ? "text-5xl rounded-full p-2  text-orange-600 bg-white font-light ":"text-5xl rounded-full p-2  text-slate-500 font-light "}/></p>
+           <p className="text-xs hover:cursor-pointer flex justify-center text-center items-center"> SHOES & ACCESSORIES</p>
           </div><div></div><div></div>
           <div 
-          className={stateSix ? "justify-center items-center py-6 px-8 rounded-md bg-orange-600 text-white":"justify-center items-center py-6 px-8 rounded-md"} 
+          className={stateSix ? "justify-center items-center py-4 px-5 rounded-md bg-orange-600 text-white hover:cursor-pointer":"justify-center items-center py-6 px-8 rounded-md hover:cursor-pointer"} 
           onClick={
             ()=>{setStateOne(false),setStateTwo(false),setStateThree(false),setStateFour(false),setStateFive(false),setStateSix(true)}}>
           <p className="justify-center items-center rounded-full text-center flex w-full">
-            <MdOutlineSportsTennis className={stateSix ? "text-5xl rounded-full p-2  text-white font-light ":"text-5xl rounded-full p-2  text-slate-500 font-light "}/></p>
-            <p className="font-bold text-sm flex justify-center text-center items-center">SPORTS & ENTERTAINMENT</p>
+            <MdOutlineSportsTennis className={stateSix ? "text-5xl rounded-full p-2  text-orange-600 bg-white font-light ":"text-5xl rounded-full p-2  text-slate-500 font-light "}/></p>
+            <p className="text-xs hover:cursor-pointer flex justify-center text-center items-center">SPORTS & ENTERTAINMENT</p>
             </div>  
         </div>
       </div>
-      <div>
-        <div>
-          <div className="justify-start items-center w-[25%]">
-            <div className="pl-4">
-            <AiOutlineControl className="w-12 h-12 p-2 rounded-full text-blue-700"/>
-            </div>
-            <div>
-              <p>
-                Theme Beyond Technology
-              </p>
-            </div>
-            <div className="">
-              <p>2 Years</p>
-              <p>Verified
-                <GiQueenCrown/> 
-              </p>
-              <p>40k Customers</p>
-            </div>
-          </div>
-          <div>
-            <p>NO.1 Vendor Rankings</p>
-            <p>Annual Sales $45,000,</p>
-          </div>
-          <div className="gird grid-cols-3">
-            <div>
-              <p>
-                +/- 5Hr
-              </p>
-              <p>
-                Respose Time
-              </p>
-            </div>
-            <div>
-              <p>5,000,000+</p>
-              <p>Transactions</p>
-            </div>
-            <div>
-              <p>100%</p>
-              <p>on-time delivery</p>
-            </div>
-          </div>
-
+      {stateOne ? bestVendor.map((item,index)=>(<Card4 data={item} key={index}/>)):""}
+      {stateTwo ? 
+      bestVendor.filter((vendor)=>vendor.category == "watch").map((list,index)=>(<Card4 data={list} key={index}/>)):""}
+      {stateThree ? 
+      bestVendor.filter((vendor)=>vendor.category == "electronic").map((list,index)=>(<Card4 data={list} key={index}/>)):""}
+      {stateFour ? 
+      bestVendor.filter((vendor)=>vendor.category == "appliance").map((list,index)=>(<Card4 data={list} key={index}/>)):""}
+      {stateFive ? 
+      bestVendor.filter((vendor)=>vendor.category == "shoes").map((list,index)=>(<Card4 data={list} key={index}/>)):""}
+      {stateSix ? 
+      bestVendor.filter((vendor)=>vendor.category == "sports").map((list,index)=>(<Card4 data={list} key={index}/>)):""}
         </div>
-      </div>
-    </div>
+    
   )
 }
 
