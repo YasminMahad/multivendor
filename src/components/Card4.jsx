@@ -1,18 +1,21 @@
-import React from 'react'
+import React,{useState} from 'react'
+const fetchIcon=(icon)=>{
+  return(
+    {icon}
+  )
+}
 
 const Card4 = ({data}) => {
-  const fetchIcon=(icon)=>{
-    return(
-      {icon}
-    )
-  }
+  const [icon,setIcon]=useState(data.icon)
   
   return (
     
 <div>
   <div className="justify-start items-center w-[25%]">
     <div className="pl-4">
-    {data.icon ? `<${(data.icon)}/>`:""}
+    {
+      data.icon
+    }
     </div>
     <div>
       <p>

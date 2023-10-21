@@ -14,7 +14,7 @@ export const bestVendor=[
         category:"watch",
         //icon:"<FaTruckFast className='text-5xl rounded-full p-2  text-slate-500 font-light '/>" ,
         //icon:"FaTruckFast",
-        icon:"AiOutlineControl className='w-12 h-12 p-2 rounded-full text-blue-700'",
+        icon:"<AiOutlineControl className='w-12 h-12 p-2 rounded-full text-blue-700'/>",
 
        
     },
@@ -33,7 +33,7 @@ export const bestVendor=[
         category:"electronic",
         //icon:"<FaTruckFast className='text-5xl rounded-full p-2  text-slate-500 font-light '/>" ,
         //icon:"FaTruckFast",
-        icon:'AiOutlineControl className="w-12 h-12 p-2 rounded-full text-blue-700"',
+        icon:'<AiOutlineControl className="w-12 h-12 p-2 rounded-full text-blue-700"/>',
         
        
     },
@@ -52,7 +52,7 @@ export const bestVendor=[
         category:"appliances",
         //icon:"<FaTruckFast className='text-5xl rounded-full p-2  text-slate-500 font-light '/>" ,
         //icon:"FaTruckFast",
-        icon:"AiOutlineControl className='w-12 h-12 p-2 rounded-full text-blue-700'",
+        icon:"<AiOutlineControl className='w-12 h-12 p-2 rounded-full text-blue-700'/>",
         
        
     },
@@ -71,7 +71,7 @@ export const bestVendor=[
         category:"watch",
         //icon:"<FaTruckFast className='text-5xl rounded-full p-2  text-slate-500 font-light '/>" ,
         //icon:"FaTruckFast",
-        icon:'AiOutlineControl className="w-12 h-12 p-2 rounded-full text-blue-700"',
+        icon:'<AiOutlineControl className="w-12 h-12 p-2 rounded-full text-blue-700"/>',
         
        
     },
@@ -90,7 +90,7 @@ export const bestVendor=[
         category:"watch",
         //icon:"<FaTruckFast className='text-5xl rounded-full p-2  text-slate-500 font-light '/>" ,
         //icon:"FaTruckFast",
-        icon:'AiOutlineControl className="w-12 h-12 p-2 rounded-full text-blue-700"',
+        icon:'<AiOutlineControl className="w-12 h-12 p-2 rounded-full text-blue-700"/>',
         
        
     },
@@ -109,7 +109,7 @@ export const bestVendor=[
         category:"watch",
         //icon:"<FaTruckFast className='text-5xl rounded-full p-2  text-slate-500 font-light '/>" ,
         //icon:"FaTruckFast",
-        icon:'AiOutlineControl className="w-12 h-12 p-2 rounded-full text-blue-700"',
+        icon:'<AiOutlineControl className="w-12 h-12 p-2 rounded-full text-blue-700"/>',
         
        
     },
@@ -128,7 +128,7 @@ export const bestVendor=[
         category:"watch",
         //icon:"<FaTruckFast className='text-5xl rounded-full p-2  text-slate-500 font-light '/>" ,
         //icon:"FaTruckFast",
-        icon:'AiOutlineControl className="w-12 h-12 p-2 rounded-full text-blue-700"',
+        icon:'<AiOutlineControl className="w-12 h-12 p-2 rounded-full text-blue-700"/>',
         
        
     },
