@@ -10,7 +10,8 @@ import Card4 from './Card4';
 import {PiCaretDoubleDownFill} from 'react-icons/pi';
 
 const BestSeller = () => {
-  const [expand,setExpand]=useState(false)
+  const [expand,setExpand]=useState(false);
+  const [collapse,setCollapse]=useState(true)
   const [stateOne,setStateOne]=useState(true);
   const [stateTwo,setStateTwo]=useState(false);
   const [stateThree,setStateThree]=useState(false);
@@ -18,10 +19,16 @@ const BestSeller = () => {
   const [stateFive,setStateFive]=useState(false);
   const [stateSix,setStateSix]=useState(false);
   return (
-    <div className={expand ? "w-full h-full":"w-full h-[1150px] overflow-hidden relative"}>
-      <div className="absolute bottom-3 right-[50%]">
-        <p>Expand <PiCaretDoubleDownFill className="text-5xl text-orange-600 "/></p>
+    <div className={expand ? "w-full relative":"w-full h-[1150px] overflow-hidden relative"}>
+      <div className={expand ? "absolute bottom-0 z-100 right-[50%] bg-orange-600 p-2 rounded-full justify-center items-center hover:cursor-pointer hover:bg-[#66452698]":"hidden"}
+      onClick={()=>setExpand(!expand)}>
+        <p className="font-bold text-md text-[#ffffff] text-center justify-center items-center">Collapse <span className="justify-center items-center flex "><PiCaretDoubleDownFill className="text-2xl rotate-180 text-[#ffffff] justify-center items-center text-center"/></span></p>
       </div>
+      <div className={!expand ? "absolute bottom-3 right-[50%] bg-orange-600 p-2 rounded-full justify-center items-center hover:cursor-pointer hover:bg-[#66452698]":"hidden"}
+      onClick={()=>setExpand(!expand)}>
+        <p className="font-bold text-md text-[#ffffff] text-center justify-center items-center">Expand <span className="justify-center items-center flex "><PiCaretDoubleDownFill className="text-2xl text-[#ffffff] justify-center items-center text-center"/></span></p>
+      </div>
+      
       <div className="pt-10 w-full">
         <p className="text-4xl font-bold text-center pt-12 pb-12 mt-12 mb-5">
           Find Best Seller Vendor

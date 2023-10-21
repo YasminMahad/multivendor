@@ -10,6 +10,8 @@ import CardList3 from '../components/CardList3';
 import Categories from '../components/Categories';
 import Sales from '../components/Sales';
 import BestSeller from '../components/BestSeller';
+import Banner1 from '../components/Banner1';
+import MostPopular from '../components/MostPopular';
 
 const Home = () => {
   return (
@@ -23,6 +25,8 @@ const Home = () => {
         <Categories/>
         <Sales/>
         <BestSeller/>
+        <Banner1/>
+        <MostPopular/>
        
     </div>
   )
